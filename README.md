@@ -10,6 +10,6 @@ git clone https://github.com/s4kibs4mi/AndroidTestAutomation.git
 3. Open AndroidTestAutomationTest.class in editor
 4. Right Click & Select AndroidTestAutomationTest
 
-[screen1]: # "Screen Shot 1"
+[screen1]: https://github.com/s4kibs4mi/AndroidTestAutomation/blob/master/screenshots/screentest.png?raw=true "Screen Shot 1"
 
 Note : Keep your device screen unlocked
