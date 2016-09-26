@@ -4,7 +4,7 @@ An example project on how to make automated UI testing on Android using Robotium
 ## How To
 
 1. Clone Project :
-git clone https://github.com/s4kibs4mi/AndroidTestAutomation.git
+`git clone https://github.com/s4kibs4mi/AndroidTestAutomation.git`
 
 2. Open Project using Android Studio
 3. Open AndroidTestAutomationTest.class in editor
