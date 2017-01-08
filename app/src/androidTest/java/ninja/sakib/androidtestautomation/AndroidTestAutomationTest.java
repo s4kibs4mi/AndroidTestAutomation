@@ -6,6 +6,7 @@ import android.support.test.runner.AndroidJUnit4;
 import android.widget.EditText;
 
 import com.robotium.solo.Solo;
+import com.squareup.spoon.Spoon;
 
 import org.junit.After;
 import org.junit.Before;
@@ -49,14 +50,17 @@ public class AndroidTestAutomationTest {
 
     @Test
     public void start() throws Exception {
+        Spoon.screenshot(mainSolo.getCurrentActivity(), "InitialScreen");
         mainSolo.clickOnEditText(0);
         mainSolo.enterText((EditText) mainActivityTestRule.getActivity()
                 .findViewById(R.id.mainTextField), "Hello Automation");
-
+        Spoon.screenshot(mainSolo.getCurrentActivity(), "BeforeNextScreen");
         mainSolo.clickOnButton("Next");
+        Spoon.screenshot(mainSolo.getCurrentActivity(), "AfterNextScreen");
 
         mainSolo.waitForActivity(PreviewActivity.class);
-
+        Spoon.screenshot(mainSolo.getCurrentActivity(), "BeforeSaveScreen");
         previewSolo.clickOnButton("Save");
+        Spoon.screenshot(mainSolo.getCurrentActivity(), "AfterSaveScreen");
     }
 }
